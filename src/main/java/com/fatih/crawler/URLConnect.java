@@ -1,4 +1,4 @@
-package com.fatih.CrawlerWithoutUI;
+package com.fatih.crawler;
 
 import java.io.IOException;
 import java.net.URL;
@@ -17,8 +17,7 @@ public class URLConnect {
 	}
 
 	public Optional<Response> execute() throws IOException {
-		return Optional.of(Jsoup.connect(url.toExternalForm())
-				.followRedirects(false) // to follow redirects
+		return Optional.of(Jsoup.connect(url.toExternalForm()).followRedirects(false) // to follow redirects
 				.timeout(10000).userAgent(USER_AGENT)// to get into pages preventing automated calls
 				.execute());
 	}

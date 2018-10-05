@@ -1,4 +1,4 @@
-package com.fatih.CrawlerWithoutUI;
+package com.fatih.crawler;
 
 import java.util.Collections;
 import java.util.Map;
